@@ -1,5 +1,7 @@
 pipeline {
-    agent any 
+    agent {
+       label ‘具体一个节点label名称’
+    }
     stages {
         stage('Build') { 
             steps {
