@@ -1,8 +1,5 @@
 pipeline {
-    agent {
-       label ‘LinuxEnv’
-        customWorkspace "${env.JOB_NAME}/${env.BUILD_NUMBER}"
-    }
+    agent any
     stages {
         stage('Build') { 
             steps {
