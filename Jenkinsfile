@@ -1,6 +1,6 @@
 pipeline {
     agent {
-       label ‘具体一个节点label名称’
+       label ‘LinuxEnv’
     }
     stages {
         stage('Build') { 
